@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+}
+
+#root{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+text-align: center;
+}
+.counter>h2{
+    font-size: 4rem;
+    color:rgb(24, 32, 148)
+}
+
+.counter > span{
+    font-size: 7rem;
+}
+button{
+    padding:5px 10px;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border:3px solid black;
+    border-radius: 5px;
+    cursor:pointer;
+}
+span{
+    margin-top: 1rem;
+}
+.btn-container{
+    margin-top:1rem;
+}

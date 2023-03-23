@@ -1,0 +1,83 @@
+/* font-family: 'Cedarville Cursive', cursive; */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#root{
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+    background-color: rgba(167, 167, 167, 0.2);
+    padding: 20px;
+    
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+#top>#name{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 45px;
+    color: rgb(207, 137, 32);
+    font-weight: 800; 
+}
+.sideBar{
+    box-shadow: 0px 2px 25px rgb(15,0,0,0.3);
+    padding:20px;
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:350px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 0.3s;
+    transform: translate(-100%);
+}
+.move-right{
+    transform:translateX(0%);
+}
+.cross{
+    display: flex;
+    color:rgb(126, 35, 35);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a{
+    padding:10px 20px;
+    font-size: 30px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+
+}
+.social-links>div{
+    margin-right:2.5rem;
+}
+
+.social-links>div i{
+    font-size:1.5rem;
+}
+
+#side-bar{
+    color:rgb(29, 162, 206);
+    font-size: 2.5rem;
+    position: fixed;
+    top:3rem;
+    right:5rem;
+    cursor:pointer;
+}

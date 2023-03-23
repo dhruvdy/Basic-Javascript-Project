@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <div id="wrapper">
+                <h1 id="appTitle">Weather App</h1>
+                <div id="buttonContainer">
+                    <button id="yourWeatherbtn" class="background">Your Weather</button>
+                    <button id="searchWeatherbtn" class="background fade-white">Search Weather</button>
+                </div>
+
+            <!-- Your Weather Section -->
+            <div class="hide" id="yourWeather">
+            </div>
+            <!-- grant access location -->
+            <div class="hide grantAccessSection">
+                <img height="80px" src="location.png" alt="">
+                <div>Grant Location Access</div>
+                <p>Allow Access To Get Weather Information</p>
+                <button grantAccess>GRANT ACCESS</button>
+            </div>
+            <!-- Search Weather Section -->
+            <div id="searchWeather">
+                <div id="searchBar">
+                    <!-- <form action=""> -->
+                    <input cityname placeholder="Search for city..." type="text">
+                    <button citysearch class="fa-solid fa-magnifying-glass"></button>
+                    <!-- //</form> -->
+                </div>
+
+            </div>
+            <!-- loading div -->
+            <div class="loading hide">
+                Loading...
+            </div>
+            <!-- UI  -->
+            <div class="weather hide">
+                <div class="country">Biharia</div>
+                <div class="skycondition">Clear</div>
+                <div class="temp">9.01 °C</div>
+                <div class="otherSpecification">
+                    <div class="fade-white windspeed"><img height="80px" src="wind.png" alt=""> WINDSPEED <br><span>2.57m/s</span></div>
+                    <div class="fade-white humidity"><img height="80px" src="humidity.png" alt=""> HUMIDITY <br><span>66%</span></div>
+                    <div class="fade-white clouds"><img height="80px" src="cloud.png" alt=""> CLOUDS <br><span>0%</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d0f8f1cfb0.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- const API_KEY = "d1845658f92b31c64bd94f06f7188c9c"; -->
